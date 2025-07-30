@@ -5,7 +5,7 @@ export const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
 export const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_KEY;
 
 class ApiClient {
-  constructor(baseURL = API_BASE_URL) {
+  constructor(baseURL = API_URL) {
     this.baseURL = baseURL;
   }
 
