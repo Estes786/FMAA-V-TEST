@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { Input } from '@/components/ui/input'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/components/ui/card'
+import { Button } from './components/components/ui/button'
+import { Badge } from './components/components/ui/badge'
+import { Input } from './components/components/ui/input'
 import {
   Table,
   TableBody,
@@ -10,22 +10,22 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table'
+} from './components/components/ui/table'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select'
+} from './components/components/ui/select'
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog'
-import { Progress } from '@/components/ui/progress'
+} from './components/components/ui/dialog'
+import { Progress } from './components/components/ui/progress'
 import {
   ListTodo,
   Search,

@@ -1,12 +1,12 @@
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
+import { Button } from './components/components/ui/button'
+import { Badge } from './components/components/ui/badge'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
-import { useTheme } from '@/components/ThemeProvider'
+} from './components/components/ui/dropdown-menu'
+import { useTheme } from './components/components/ThemeProvider'
 import {
   Menu,
   Sun,
