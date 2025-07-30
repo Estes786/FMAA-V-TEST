@@ -10,6 +10,10 @@
     {
       "src": "backend/server.py",
       "use": "@vercel/python"
+    },
+    {
+      "src": "api/*.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -19,7 +23,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/$1"
+      "dest": "/api/index?path=$1"
     }
   ],
   "env": {
