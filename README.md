@@ -292,3 +292,37 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Made with ❤️ by FFMA Team**
 
 *FFMA Dashboard v1 - Empowering Analytics with Intelligent Micro-Agents*
+
+## 🚀 Deployment ke Vercel
+
+### Struktur Folder
+- `frontend/` : Aplikasi React (Vite)
+- `backend/`  : API FastAPI (Python)
+
+### Langkah Deploy
+1. **Copy file environment**
+   - Salin `frontend/.env.example` ke `frontend/.env` dan isi sesuai kebutuhan.
+   - Salin `backend/.env.example` ke `backend/.env` dan isi sesuai kebutuhan.
+2. **Push ke GitHub/GitLab**
+3. **Hubungkan repo ke Vercel**
+4. **Set environment variable di dashboard Vercel** (isi dari `.env` frontend & backend)
+5. **Deploy**
+
+### Konfigurasi Environment
+- **Frontend** (`frontend/.env`):
+  - `VITE_API_URL` = URL backend FastAPI (misal: `https://your-vercel-backend-url.vercel.app/api`)
+  - `VITE_HUGGINGFACE_URL`, `VITE_SUPABASE_URL`, `VITE_SUPABASE_KEY`
+- **Backend** (`backend/.env`):
+  - `MONGO_URL`, `HUGGINGFACE_URL`, `SUPABASE_URL`, `SUPABASE_KEY`
+
+### Routing Otomatis (vercel.json)
+- Semua request `/api/*` diarahkan ke backend FastAPI
+- Sisanya ke frontend (Vite build)
+
+### Catatan
+- Untuk integrasi HuggingFace & Supabase, cukup gunakan variabel dari `.env` di kode frontend/backend.
+- Tidak perlu mengubah base path di `vite.config.js`.
+
+---
+
+Siap deploy! 🚀
