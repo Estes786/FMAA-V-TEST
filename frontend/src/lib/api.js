@@ -1,5 +1,8 @@
 // API configuration and helper functions
-const API_BASE_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8001';
+export const API_URL = import.meta.env.VITE_API_URL;
+export const HUGGINGFACE_URL = import.meta.env.VITE_HUGGINGFACE_URL;
+export const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
+export const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_KEY;
 
 class ApiClient {
   constructor(baseURL = API_BASE_URL) {
