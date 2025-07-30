@@ -5,15 +5,11 @@
     {
       "src": "frontend/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
+      "config": { "distDir": "public" }
     },
     {
       "src": "backend/server.py",
       "use": "@vercel/python"
-    },
-    {
-      "src": "api/*.js",
-      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -23,7 +19,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/api/frontend?path=$1"
+      "dest": "/public/$1"
     }
   ],
   "env": {
