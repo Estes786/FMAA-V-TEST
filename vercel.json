@@ -3,8 +3,9 @@
   "name": "fmaa-dashboard-v1",
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/next"
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
     },
     {
       "src": "backend/server.py",
@@ -18,7 +19,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/$1"
+      "dest": "frontend/dist/$1"
     }
   ],
   "env": {
