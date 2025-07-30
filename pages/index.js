@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import { Sidebar } from '@/components/Sidebar'
-import { Header } from '@/components/Header'
-import { Dashboard } from '@/components/Dashboard'
-import apiClient from '@/lib/api'
+import { Sidebar } from './components/Sidebar'
+import { Header } from './components/Header'
+import { Dashboard } from './components/Dashboard'
+import apiClient from './lib/api'
 
 export default function Home() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
